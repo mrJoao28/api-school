@@ -14,7 +14,6 @@ const Alunos = mongoose.Schema({
         "bim2":[Number],
         "bim3":[Number],
         "bim4":[Number],
-        type:Number
     }
 })
 
