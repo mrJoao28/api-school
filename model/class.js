@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
 const Alunos = mongoose.Schema({
-    "nome":{
+    "name":{
         type:String,
         required:true
     },
-    "idade":{
+    "age":{
         type:Number,
         required:true
     },
@@ -18,11 +18,11 @@ const Alunos = mongoose.Schema({
 })
 
 const Professores = mongoose.Schema({
-    "nome":{
+    "name":{
         type:String,
         required:true
     },
-    "idade":{
+    "age":{
         type:Number,
         required:true
     },
@@ -33,22 +33,22 @@ const Professores = mongoose.Schema({
 });
 
 const Coordenacao = mongoose.Schema({
-    "nome":{
+    "name":{
         type:String,
         required:true
     },
-    "idade":{
+    "age":{
         type:Number,
         required:true
     }
 })
 
 const Direcao = mongoose.Schema({
-    "nome":{
+    "name":{
         type:String,
         required:true
     },
-    "idade":{
+    "age":{
         type:Number,
         required:true
     }
