@@ -10,10 +10,10 @@ const Alunos = mongoose.Schema({
         required:true
     },
     "Notas":{
-        "1bim":[],
-        "2bim":[],
-        "3bim":[],
-        "4bim":[],
+        "bim1":[Number],
+        "bim2":[Number],
+        "bim3":[Number],
+        "bim4":[Number],
         type:Number
     }
 })
