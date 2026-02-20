@@ -38,7 +38,7 @@ const acessar = async (req,res)=>{
                         {"username":foundUser.username},
                     tokenRefresh[title],
                 {expiresIn: '2d'});
-    await Users.findByIdAndUpdate({_id:id,"token":refreshToken})
+    await Users.findByIdAndUpdate({_id:id,},{"token":refreshToken})
     res.cookie('jwt',refreshToken,{httpOnly:true, maxAge:2*24*60*60*1000})
     res.json({accessToken})
     } catch(err){
